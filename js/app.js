@@ -6,14 +6,18 @@ var y = [1,2,3,4,5,6,7,8,9,10]
 var gameX = x[Math.floor(Math.random() * x.length)];
 var gameY = y[Math.floor(Math.random() * y.length)];
 
-function randomX() {
-  document.getElementById("x").innerHTML = gameX.toString()
-  console.log(gameX);
-};
-
-function randomY() {
-  document.getElementById("y").innerHTML = gameY.toString();
-  console.log(gameY);
+function setGameBoard() {
+  if (gameX > gameY) {
+    document.getElementById("x").innerHTML = gameX.toString()
+    console.log(gameX);
+    document.getElementById("y").innerHTML = gameY.toString();
+    console.log(gameY);
+  } else {
+    document.getElementById("y").innerHTML = gameX.toString()
+    console.log(gameX);
+    document.getElementById("x").innerHTML = gameY.toString();
+    console.log(gameY);
+  }
 }
 
 function answerAdd(gameX, gameY) {
@@ -21,7 +25,11 @@ function answerAdd(gameX, gameY) {
 }
 
 function answerSubtract(gameX, gameY) {
-  return gameX - gameY
+  if (gameX >= gameY) {
+    return gameX - gameY
+  } else {
+    return gameY-gameX
+  }
 }
 
 function setAdd() {
@@ -32,21 +40,23 @@ function setSubtract() {
   document.getElementById("operator").innerHTML = "-";
 }
 
+/***************
+GAME PLAY
+***************/
+
 $(document).ready(function() {
     console.log( "ready!" );
 
     $("#play-addition").on( "click", function() {
       setAdd();
-      randomX();
-      randomY();
+      setGameBoard();
       answerAdd();
       console.log(answerAdd(gameX, gameY));
     });
 
     $("#play-subtraction").on( "click", function() {
       setSubtract();
-      randomX();
-      randomY();
+      setGameBoard();
       answerSubtract();
       console.log(answerSubtract(gameX, gameY));
     });

@@ -31,17 +31,24 @@ body {
 NAVBAR
 **********************/
 
+nav {
+  background-color: rgb(255,255,255);
+  color: rgb(232,12,223);
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+}
 
 /**********************
 MAIN
 **********************/
 
-h1 {
-  padding: 50px 0px;
-  font-size: 7em;
-  text-align: center;
-  font-family: 'Kalam', cursive;
-  font-weight: bold;
+#wrapper {
+  margin: 75px 0;
 }
 
 #x, #y {
