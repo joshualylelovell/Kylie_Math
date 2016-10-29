@@ -16,18 +16,39 @@ function randomY() {
   console.log(gameY);
 }
 
-function answer(gameX, gameY) {
+function answerAdd(gameX, gameY) {
 	return gameX + gameY
+}
+
+function answerSubtract(gameX, gameY) {
+  return gameX - gameY
+}
+
+function setAdd() {
+  document.getElementById("operator").innerHTML = "+";
+}
+
+function setSubtract() {
+  document.getElementById("operator").innerHTML = "-";
 }
 
 $(document).ready(function() {
     console.log( "ready!" );
 
-    $("#play").on( "click", function() {
+    $("#play-addition").on( "click", function() {
+      setAdd();
       randomX();
       randomY();
-      answer();
-      console.log(answer(gameX, gameY));
+      answerAdd();
+      console.log(answerAdd(gameX, gameY));
+    });
+
+    $("#play-subtraction").on( "click", function() {
+      setSubtract();
+      randomX();
+      randomY();
+      answerSubtract();
+      console.log(answerSubtract(gameX, gameY));
     });
 
     $("#answerForm").submit(function(){
@@ -36,7 +57,9 @@ $(document).ready(function() {
         return parseInt(userAnswer, 10);
       }
       console.log(userAnswer);
-    	if ( userAnswerToInt(userAnswer) === answer(gameX, gameY)) {
+    	if ( userAnswerToInt(userAnswer) === answerAdd(gameX, gameY)) {
+        alert("CORRECT")
+      } else if ( userAnswerToInt(userAnswer) === answerSubtract(gameX, gameY)) {
         alert("CORRECT")
       } else {
         alert("TRY AGAIN")
