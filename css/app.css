@@ -1,0 +1,107 @@
+/**********************
+GENERAL
+**********************/
+
+body {
+  background-color: rgb(232,12,223);
+  color: rgb(255,255,255);
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+}
+
+.game-button {
+  background-color: rgb(255,255,255);
+  color: rgb(232,12,223);
+  font-weight: bold;
+  border-radius: 10%;
+}
+
+.game-button:hover {
+  background-color: rgb(232, 100, 223);
+  color: rgb(255,255,255);
+}
+
+.game-button:active {
+  background-color: rgb(232, 100, 223);
+  color: rgb(255,255,255);
+}
+
+
+/**********************
+NAVBAR
+**********************/
+
+
+/**********************
+MAIN
+**********************/
+
+h1 {
+  padding: 50px 0px;
+  font-size: 7em;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+}
+
+#x, #y {
+  max-height: 200px;
+  max-width: 150px;
+  height: 140px;
+  width: 100px;
+  line-height: 125px;
+  border-radius: 50%;
+  background-color: rgb(255,255,255);
+  color: rgb(232,12,223);
+  text-align: center;
+  font-size: 5em;
+}
+
+#operator {
+  text-align: center;
+  font-size: 5em;
+}
+
+#kylie_red {
+  border-radius: 50%;
+  max-height: 400px;
+  max-width: 300px;
+  margin-top: 75px;
+}
+
+.digits {
+  padding: 0;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.problem-column {
+  height: 140px;
+}
+
+.play-button {
+  display: inline-block;
+  margin: 0;
+  height: 30px;
+}
+
+#button-column {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#answerForm {
+  width: 300px;
+  padding: 0;
+  border-radius: 15%;
+}
+
+
+/**********************
+FOOTER
+**********************/
