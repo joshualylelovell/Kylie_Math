@@ -26,6 +26,10 @@ body {
   color: rgb(255,255,255);
 }
 
+#wrapper {
+  margin: 0px 20px;
+}
+
 
 /**********************
 NAVBAR
@@ -51,11 +55,16 @@ MAIN
   margin: 75px 0;
 }
 
+#gameboard {
+  display: flex;
+  align-items: left;
+}
+
 #x, #y {
   max-height: 200px;
   max-width: 150px;
   height: 140px;
-  width: 100px;
+  width: 110px;
   line-height: 125px;
   border-radius: 50%;
   background-color: rgb(255,255,255);
@@ -66,14 +75,15 @@ MAIN
 
 #operator {
   text-align: center;
-  font-size: 5em;
+  font-size: 6em;
 }
 
 #kylie_red {
   border-radius: 50%;
-  max-height: 400px;
-  max-width: 300px;
-  margin-top: 75px;
+  max-height: 300px;
+  max-width: 225px;
+  padding: 0;
+  margin: 0;
 }
 
 .digits {
@@ -106,6 +116,12 @@ MAIN
   width: 300px;
   padding: 0;
   border-radius: 15%;
+  margin: 0 0 0 15px;
+}
+
+#correctPhrasesDiv {
+  font-size: 7em;
+  text-align: center;
 }
 
 
