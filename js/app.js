@@ -81,12 +81,14 @@ $(document).ready(function() {
       console.log(userAnswer);
     	if ( userAnswerToInt(userAnswer) === answerAdd(gameX, gameY)) {
         pushCorrectPhrases();
+        setTimeout(function() {reset()}, 2000);
       } else if ( userAnswerToInt(userAnswer) === answerSubtract(gameX, gameY)) {
         pushCorrectPhrases();
+        setTimeout(function() {reset()}, 2000);
       } else {
         document.getElementById("correctPhrasesDiv").innerHTML = "Try again. You can do it.";
+        setTimeout(function() {reset()}, 20000);
       }
-      setTimeout(function() {reset()}, 2000);
       return false;
     });
 });
