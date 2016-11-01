@@ -8,4 +8,6 @@ and subtraction.
 * CSS
 * Javascript
 * jQuery
-* Foundation for Sites 6 
+* Foundation for Sites 6
+
+Site deployed at [kylie-math.bitballon](http://www.kylie-math.bitballon.com)
