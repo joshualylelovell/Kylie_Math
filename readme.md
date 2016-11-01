@@ -10,4 +10,4 @@ and subtraction.
 * jQuery
 * Foundation for Sites 6
 
-Site deployed at [kylie-math.bitballon](http://www.kylie-math.bitballon.com)
+Site deployed at [kylie-math.bitballon](http://kylie-math.bitballon.com)
