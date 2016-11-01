@@ -17,29 +17,29 @@
 
     <div id="wrapper">
       <div class="row">
-        <div class="large-3 medium-4 small-12 columns">
+        <div class="large-3 medium-12 small-12 columns">
           <img id="kylie_red" src="images/kylie_red.JPG">
         </div>
 
-        <div class="large-9 medium-8 small-12 columns" id="gameboard">
+        <div class="large-9 medium-12 small-12 columns" id="gameboard">
 
           <!-- GAMEBOARD: Right container -->
           <div class="row">
-            <div class="large-2 medium-2 columns problem-column" id="button-column">
+            <div class="large-2 medium-2 small-12 columns problem-column" id="button-column">
               <button id="play-addition" class="button game-button play-button"> + Add </button>
               <button id="play-subtraction" class="button game-button play-button"> - Subtract </button>
             </div>
-            <div class="large-2 medium-2 columns digits problem-column">
+            <div class="large-2 medium-2 small-3 columns digits problem-column" id="x-column">
               <div id="x"></div>
             </div>
-            <div class="large-2 medium-2 columns problem-column">
+            <div class="large-2 medium-2 small-3 columns problem-column">
               <div id="operator"> + </div>
             </div>
-            <div class="large-2 medium-2 columns digits problem-column">
+            <div class="large-2 medium-2 small-3 columns digits problem-column">
               <div id="y"></div>
             </div>
-            <div class="large-4 medium-4 columns problem-column">
-              <form id="answerForm">
+            <div class="large-4 medium-4 small-12 columns problem-column">
+              <form id="answerForm" autocomplete="off">
         		    Your Answer:
         		    <input id="userAnswer" type="text" name="answer">
         		    <input type="submit" value="Submit" class="button game-button">

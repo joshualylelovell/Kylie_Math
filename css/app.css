@@ -38,6 +38,7 @@ NAVBAR
 nav {
   background-color: rgb(255,255,255);
   color: rgb(232,12,223);
+  width: auto;
 }
 
 h1 {
@@ -57,15 +58,17 @@ MAIN
 
 #gameboard {
   display: flex;
-  align-items: left;
+  align-items: center;
+  justify-content: flex-start;
+  height: 300px;
 }
 
 #x, #y {
-  max-height: 200px;
-  max-width: 150px;
+  max-height: 250px;
+  max-width: 175px;
   height: 140px;
   width: 110px;
-  line-height: 125px;
+  line-height: 140px;
   border-radius: 50%;
   background-color: rgb(255,255,255);
   color: rgb(232,12,223);
@@ -115,8 +118,12 @@ MAIN
 #answerForm {
   width: 300px;
   padding: 0;
-  border-radius: 15%;
   margin: 0 0 0 15px;
+}
+
+input[type=text] {
+  color: rgb(232,12,223);
+  border-radius: 10px;
 }
 
 #correctPhrasesDiv {
@@ -124,7 +131,139 @@ MAIN
   text-align: center;
 }
 
-
 /**********************
 FOOTER
 **********************/
+
+
+/**********************
+MOBILE
+**********************/
+@media only screen and (max-width: 800px) {
+  #gameboard {
+    padding: 0 20px;
+    height: 200px
+  }
+  #correctPhrasesDiv {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  #kylie_red {
+    /*height: 200px;
+    width: 145px;
+    margin: 0 0 20px 0;*/
+    display: none;
+  }
+  #button-column {
+    height: 75px;
+    width: 550px;
+    margin-top: 20px;
+  }
+  #answerForm {
+    width: 250px;
+  }
+  #gameboard {
+    width: 550px;
+  }
+  #correctPhrasesDiv {
+    font-size: 4em;
+  }
+  .problem-column {
+    margin-bottom: 10px;
+  }
+  #x-column {
+    margin-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 3em;
+  }
+  #kylie_red {
+    margin: 0 0 20px 0;
+  }
+  #button-column {
+    height: 75px;
+    width: 400px;
+    margin-top: 20px;
+  }
+  #answerForm {
+    width: 200px;
+  }
+  #gameboard {
+    width: 400px;
+  }
+  #correctPhrasesDiv {
+    font-size: 4em;
+  }
+  .problem-column {
+    margin-bottom: 10px;
+  }
+  #x-column {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 3em;
+  }
+  #kylie_red {
+    margin: 0 0 20px 0;
+  }
+  #button-column {
+    height: 75px;
+    width: 375px;
+    margin-top: 20px;
+  }
+  #answerForm {
+    width: 200px;
+  }
+  #gameboard {
+    width: 375px;
+  }
+  #correctPhrasesDiv {
+    font-size: 4em;
+  }
+  .problem-column {
+    margin-bottom: 10px;
+  }
+  #x-column {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 3em;
+  }
+  #kylie_red {
+    margin: 0 0 20px 0;
+  }
+  #button-column {
+    height: 75px;
+    width: 320px;
+    margin-top: 40px;
+  }
+  #answerForm {
+    width: 200px;
+  }
+  #gameboard {
+    width: 320px;
+  }
+  #correctPhrasesDiv {
+    font-size: 4em;
+  }
+  .problem-column {
+    margin-bottom: 15px;
+  }
+  #x-column {
+    margin-left: 50px;
+  }
+}
