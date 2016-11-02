@@ -131,6 +131,11 @@ input[type=text] {
   text-align: center;
 }
 
+#correctPhrasesRow, #correctPhrasesColumn {
+  margin: 0;
+  padding: 0;
+}
+
 /**********************
 FOOTER
 **********************/
